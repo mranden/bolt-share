@@ -28,7 +28,7 @@ final class Assets {
 			return;
 		}
 
-		$css_path = BOLT_SHARE_PATH . 'build/css/frontend.css';
+		$css_path = BOLT_SHARE_PATH . 'build/css/bolt-share-frontend.css';
 		$js_path  = BOLT_SHARE_PATH . 'build/js/frontend.js';
 
 		if ( ! is_readable( $css_path ) || ! is_readable( $js_path ) ) {
@@ -40,7 +40,7 @@ final class Assets {
 
 		wp_register_style(
 			$handle,
-			BOLT_SHARE_URL . 'build/css/frontend.css',
+			BOLT_SHARE_URL . 'build/css/bolt-share-frontend.css',
 			[],
 			$version
 		);

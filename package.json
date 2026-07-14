@@ -4,10 +4,10 @@
   "scripts": {
     "clean": "node -e \"require('fs').rmSync('build', { recursive: true, force: true })\"",
     "build": "npm run clean && npm run build:css && npm run build:js",
-    "build:css": "sass src/scss/frontend.scss build/css/frontend.css --style=compressed --no-source-map",
+    "build:css": "sass src/scss/frontend.scss build/css/bolt-share-frontend.css --style=compressed --no-source-map",
     "build:js": "esbuild src/js/frontend.js --bundle --minify --target=es2018 --outfile=build/js/frontend.js",
     "watch": "concurrently \"npm:watch:css\" \"npm:watch:js\"",
-    "watch:css": "sass --watch src/scss/frontend.scss:build/css/frontend.css --style=expanded",
+    "watch:css": "sass --watch src/scss/frontend.scss:build/css/bolt-share-frontend.css --style=expanded",
     "watch:js": "esbuild src/js/frontend.js --bundle --sourcemap --target=es2018 --outfile=build/js/frontend.js --watch"
   },
   "devDependencies": {

@@ -76,7 +76,7 @@
 		position: absolute;
 		z-index: 100;
 		inset-block-start: 100%;
-		inset-inline-start: 0;
+		left: -158px;
 		min-width: var(--bolt-share-panel-min-width);
 		max-width: calc(100vw - 2rem);
 		margin-block-start: var(--bolt-share-panel-offset);
@@ -103,8 +103,10 @@
 
 	&__list {
 		margin: 0;
-		padding: 0;
+		padding: 0px;
+		padding-inline-start: 0;
 		list-style: none;
+		list-style-type: none;
 	}
 
 	&__item {

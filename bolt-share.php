@@ -3,7 +3,7 @@
  * Plugin Name:       Bolt Share
  * Plugin URI:        https://github.com/bolt/bolt-share
  * Description:       Lightweight share shortcode with Facebook, Instagram, and e-mail options.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 6.0
  * Requires PHP:      8.0
  * Author:            Bolt
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'BOLT_SHARE_VERSION', '1.0.0' );
+define( 'BOLT_SHARE_VERSION', '1.0.1' );
 define( 'BOLT_SHARE_FILE', __FILE__ );
 define( 'BOLT_SHARE_PATH', plugin_dir_path( __FILE__ ) );
 define( 'BOLT_SHARE_URL', plugin_dir_url( __FILE__ ) );
